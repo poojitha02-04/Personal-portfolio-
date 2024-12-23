@@ -8,19 +8,23 @@
 
 <link rel="stylesheet" href="style.css">
 <body> 
-    <header>
+    <header class="hero">
+        <h1>Hello! i am Poojitha Levaku</h1>
+        <p>Web devloper|designer</p>
+        <button onclick="alert('welcome to my portfolio')">Hello </button>
         <nav>
-                    <a href="#">About Me</a>
-                    <a href="#">Skills & Experience</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Contact</a>
+                    <a href="#about">About Me</a>
+                    <a href="#skills">Skills & Experience</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#Contact">Contact</a>
                      
         </nav>
     </header>
     <section id="about">
         <h1>About me</h1>
-        <p> Hi there ! This is Poojitha Levaku. I am a student at GNITS Hyderabad.</p>
-        <img src="profile picture.jpg" alt="My profile picture">
+        <img src="profile picture.jpg" alt="My profile picture" class="profile-pic">
+        <p> I am a student who is intrested in web development.</p>
+        <p>I enjoy tackling with complex problems and always try to experiment with various front-end tools</p>
     </section>
     <section id="skills">
         <h2>Skills & Experience</h2>
@@ -32,20 +36,27 @@
         <p>Experience : Completing Online courses , experimenting with various front-end tools</p>
     </section>
     <section id="Projects">
-        <h2>My project</h2>
-        <div class = "My project">
-            <h3>Inclusive Education</h3>
-            <p>we developed a PLATFORM for STUDENTS to UNDERSTANDING CONCEPTS IN A BETTER WAY RATHER THAN MUGGING IT UP</p>
+        <h2>My Projects</h2>
+        <div class = "project-cards">
+            <div class="card">
+              <h3>Inclusive Education</h3>
+              <p> we developed a PLATFORM for STUDENTS to UNDERSTANDING CONCEPTS IN A BETTER WAY RATHER THAN MUGGING IT UP</p>
+              <a href="#">View on Github</a>
+              <a href="#">Live Demo</a>
+            </div>
         </div>
-    
-
-        
-
     </section>
     <section id="Contact">
         <h1>Contact</h1>
-        <p>Email id : poojithareddy2k07@gmail.com</p>
-        <p> Linkedin url : www.linkedin.com/in/poojitha-levaku-55b9a232ab</p>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
     <button id="alertButton">Click Here</button>
     <script src="script.js"></script>
